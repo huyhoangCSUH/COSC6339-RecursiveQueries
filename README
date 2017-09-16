@@ -1,0 +1,12 @@
+This is the code to generate SQL Recursive Queries for HP Vertica database.
+It has been simplified to serve the purpose of the class, so there are many hard-coded parameters in many places.
+
+The code has been compiled for java 7 and can be run as-is after changing the parameters in the java.ini file, and you already have database named webgoogle inside Vertica.
+To run the program, clone the whole directory onto your Ubuntu machine with Vertica, and type:
+
+java RQ_CALL 
+
+To make it run with your table, modify the hard-coded parameters in RQ_CALL.java's main function then reompile.
+The txt filename should be changed accordingly, with the format: tableName and recursive_depth and the phrases "_groupopt.txt".
+
+
