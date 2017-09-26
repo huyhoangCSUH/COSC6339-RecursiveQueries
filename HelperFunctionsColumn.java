@@ -207,7 +207,7 @@ public class HelperFunctionsColumn extends HelperFunctions {
 				recursiveTableQuery = "CREATE TABLE " + newTableName
 						+ " AS SELECT " + distinct + " "+ d + " AS d, "+ oldTableName+ ".i AS i, E.j AS j, "
 						+ selectQuery.pAggregation + "("+oldTableName+".p*E.p) AS p, "
-						+ selectQuery.vAggregation + "("+oldTableName+".v*E.v) AS v"
+						+ selectQuery.vAggregation + "("+oldTableName+".v+E.v) AS v"
 						+ selectionCondition + " FROM " + oldTableName + " JOIN E ON "+oldTableName+".j=E.i"
 						+ " WHERE "+oldTableName+".i!="+oldTableName+".j";
 				recursiveTableQuery = recursiveTableQuery+ " GROUP BY "+oldTableName+".d,"+oldTableName+".i,E.j";
