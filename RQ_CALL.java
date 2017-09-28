@@ -39,7 +39,7 @@ public class RQ_CALL {
 	public static String createIndex2 = "N";
 	//public static final int depth = 2;
 	public static void main(String[] args) {
-	    int recursiveDepth = 2;
+	    int recursiveDepth = 4;
 		String tableName = "webgoogle" + recursiveDepth;
                 //O3= args[0];
 		
